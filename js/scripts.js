@@ -6,16 +6,16 @@ $(document).ready(function() {
     var start = $("input#start").val();
     var end = $("input#end").val();
 
+event.preventDefault();
+console.log("nameInputis" + name);
+
     $(".name").text(nameInput);
     $(".purpose").text(purposeInput);
     $(".date").text(dateInput);
     $(".start").text(startInput);
     $(".end").text(endInput);
 
-    event.preventDefault();
-    
     $("#appointmentconfirm").show();
 
-    event.preventDefault();
   });
 });
