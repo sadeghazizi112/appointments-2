@@ -7,13 +7,17 @@ $(document).ready(function() {
     var end = $("input#end").val();
 
 event.preventDefault();
-console.log("nameInputis" + name);
+console.log(name);
+console.log(purpose);
+console.log(date);
+console.log(start);
+console.log(end);
 
-    $(".name").text(nameInput);
-    $(".purpose").text(purposeInput);
-    $(".date").text(dateInput);
-    $(".start").text(startInput);
-    $(".end").text(endInput);
+    $(".nameconfirm").append(name);
+    $(".purposeconfirm").append(purpose);
+    $(".dateconfirm").append(date);
+    $(".startconfirm").append(start);
+    $(".endconfirm").append(end);
 
     $("#appointmentconfirm").show();
 
